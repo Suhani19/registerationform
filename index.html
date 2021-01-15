@@ -1,55 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang = "eng">
 <head>
+    <meta charset ="UTF-8">
 <title>Registeration form</title>
+<link rel = "stylesheet" href ="style.css">
 </head> 
     <body>
-        <form>
-            <table>
-                <tr>
-                    <td>
-                        Name :
-                    </td>
-                <td>
-                <input type ="text" placeholder ="Name" name = "">
-                </td>
-                </tr>
-                <tr>
-                    <td>
-                        Password :
-                    </td>
-                    <td>
-                        <input type = "Password" placeholder = "Password" name = "">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Gender :
-                    </td>
-                    <td>
-                        <input type = "radio" name = "Gender">Male
-                        <input type = "radio" name = "Gender">Female
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Email :
-                    </td>
-                    <td>
-                        <input type = "mail" placeholder = "Email" name = "">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Phone no :
-                    </td>
-                    <td>
-                        <select>
-                            
-                        </select>
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </body>
+    <div class = "wrapper">
+        <div class = "title">
+            Registeration Form
+        </div>
+        <div class = "form">
+            <div class = "input_field">
+                <label>First Name</label>
+                <input type = "text" class = "input">
+            </div>
+            <div class = "input_field">
+                <label>Last Name</label>
+                <input type = "text" class = "input">
+            </div>
+            <div class = "input_field">
+                <label>Password</label>
+                <input type = "password" class = "input">
+            </div>
+            <div class = "input_field">
+                <label>Confirm password</label>
+                <input type = "password" class = "input">
+            </div>
+            <div class = "input_field">
+                <label>Gender</label>
+                <div class ="custom_select">
+                    <select>
+                        <option value ="">Select</option>
+                        <option value = "male">Male</option>
+                        <option value = "female">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class ="input_field">
+                <label>Postal code</label>
+                <input type ="text" class ="input">
+            </div>
+            <div class ="input_field terms">
+                <label class ="check">
+                <input type = "checkbox">
+                <span class = "checkmark"></span>
+                </label>
+                <p>Agreed to terms and conditions</p>
+                </div>
+                <div class ="input_field">
+                    <input type ="submit" value ="Register" class ="btn">
+                </div>
+            </div>
+        </div>
+    </div>
+        </body>
 </html>
